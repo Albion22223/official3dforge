@@ -8,7 +8,7 @@ const Bento = () => {
     <section id="process" className="py-24 md:py-32 relative">
       <div className="container">
         <div className="max-w-2xl mb-16">
-          <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">Why Volumetrik</p>
+          <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">Why 3DForge</p>
           <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight text-gradient">
             Engineered for builders, designers, and dreamers.
           </h2>
@@ -22,7 +22,7 @@ const Bento = () => {
             <div className="relative z-10 h-full flex flex-col justify-end p-8">
               <Layers className="h-6 w-6 text-primary mb-3" />
               <h3 className="font-display text-2xl md:text-3xl font-semibold mb-2">Complex geometry, no compromise</h3>
-              <p className="text-muted-foreground max-w-md">From nested lattices to organic curves, our SLA and FDM rigs hit 0.1mm tolerances on the first try.</p>
+              <p className="text-muted-foreground max-w-md">From nested lattices to organic curves, our SLA and FDM rigs hit 0.2mm tolerances on the first try.</p>
             </div>
           </div>
 
@@ -44,7 +44,7 @@ const Bento = () => {
           {/* Precision */}
           <div className="md:col-span-1 group relative overflow-hidden rounded-3xl border border-border bg-gradient-primary p-6 text-primary-foreground">
             <Ruler className="h-5 w-5 mb-3" />
-            <div className="font-display text-3xl font-semibold leading-none">0.1<span className="text-base">mm</span></div>
+            <div className="font-display text-3xl font-semibold leading-none">0.2<span className="text-base">mm</span></div>
             <div className="text-xs opacity-80 mt-1">layer precision</div>
           </div>
 
