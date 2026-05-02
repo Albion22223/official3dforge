@@ -2,8 +2,9 @@ import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Bento from "@/components/Bento";
 import Process from "@/components/Process";
+import QuoteBuilder from "@/components/QuoteBuilder";
 import Pricing from "@/components/Pricing";
-import CTA from "@/components/CTA";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -13,8 +14,9 @@ const Index = () => {
       <Hero />
       <Bento />
       <Process />
+      <QuoteBuilder />
       <Pricing />
-      <CTA />
+      <Contact />
       <Footer />
     </main>
   );
