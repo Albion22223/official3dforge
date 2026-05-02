@@ -13,7 +13,7 @@ const tiers = [
     price: "$49",
     unit: "/part",
     desc: "Production-ready parts with premium finish.",
-    features: ["SLA or premium FDM", "0.1mm layer precision", "24-hour rush available", "Sanded & primed finish", "Color matching"],
+    features: ["SLA or premium FDM", "0.2mm layer precision", "24-hour rush available", "Sanded & primed finish", "Color matching"],
     featured: true,
   },
   {

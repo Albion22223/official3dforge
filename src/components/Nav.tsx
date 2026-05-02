@@ -29,7 +29,7 @@ const Nav = () => {
             <span className="grid place-items-center h-8 w-8 rounded-lg bg-gradient-primary shadow-glow">
               <Box className="h-4 w-4 text-primary-foreground" />
             </span>
-            Volumetrik
+            3DForge
           </a>
           <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
             {links.map((l) => (

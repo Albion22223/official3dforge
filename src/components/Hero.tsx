@@ -31,7 +31,7 @@ const Hero = () => {
             <div className="mt-12 grid grid-cols-3 gap-6 max-w-md">
               {[
                 { v: "12k+", l: "Prints shipped" },
-                { v: "0.1mm", l: "Layer precision" },
+                { v: "0.2mm", l: "Layer precision" },
                 { v: "24+", l: "Materials" },
               ].map((s) => (
                 <div key={s.l}>

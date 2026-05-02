@@ -9,7 +9,7 @@ const Footer = () => {
             <span className="grid place-items-center h-7 w-7 rounded-md bg-gradient-primary">
               <Box className="h-3.5 w-3.5 text-primary-foreground" />
             </span>
-            Volumetrik
+            3DForge
           </div>
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-foreground transition-colors">Process</a>
@@ -17,7 +17,7 @@ const Footer = () => {
             <a href="#" className="hover:text-foreground transition-colors">Pricing</a>
             <a href="#" className="hover:text-foreground transition-colors">Contact</a>
           </div>
-          <p className="text-xs text-muted-foreground">© 2026 Volumetrik. Made with precision.</p>
+          <p className="text-xs text-muted-foreground">© 2026 3DForge. Made with precision.</p>
         </div>
       </div>
     </footer>
