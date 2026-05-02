@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Box, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const links = [
   { href: "#process", label: "Process" },
@@ -26,9 +27,7 @@ const Nav = () => {
           scrolled ? "border-border bg-background/80 backdrop-blur-xl shadow-elegant" : "border-border/50 bg-background/40 backdrop-blur-md"
         }`}>
           <a href="#" className="flex items-center gap-2 font-display font-semibold text-lg">
-            <span className="grid place-items-center h-8 w-8 rounded-lg bg-gradient-primary shadow-glow">
-              <Box className="h-4 w-4 text-primary-foreground" />
-            </span>
+            <img src={logo} alt="3DForge logo" width={32} height={32} className="h-8 w-8 object-contain" />
             3DForge
           </a>
           <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
