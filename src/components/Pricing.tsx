@@ -1,27 +1,46 @@
-import { Check } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 
 const tiers = [
   {
-    name: "Prototype",
+    name: "One-Off",
     price: "$19",
     unit: "/part",
-    desc: "Single prints for testing fits and ideas.",
-    features: ["FDM print, PLA or PETG", "Standard 0.2mm layers", "48-hour ship", "Basic finishing"],
+    desc: "Perfect for a single replacement part, prototype, or test piece.",
+    features: [
+      "FDM print — PLA or PETG",
+      "Standard 0.2mm precision",
+      "Ships within 48 hours",
+      "Basic finishing",
+      "Free reprint if unsatisfied",
+    ],
   },
   {
-    name: "Studio",
+    name: "Business",
     price: "$49",
     unit: "/part",
-    desc: "Production-ready parts with premium finish.",
-    features: ["SLA or premium FDM", "0.2mm layer precision", "24-hour rush available", "Sanded & primed finish", "Color matching"],
+    desc: "Production-ready parts for your shop, office, or storefront.",
+    features: [
+      "SLA resin or premium FDM",
+      "0.2mm layer precision",
+      "24-hour rush available",
+      "Sanded & primed finish",
+      "Color matching",
+      "Free reprint guarantee",
+    ],
     featured: true,
   },
   {
-    name: "Workshop",
+    name: "Ongoing",
     price: "Custom",
     unit: "",
-    desc: "Batch runs and ongoing manufacturing.",
-    features: ["Volume discounts", "Dedicated account manager", "Material consulting", "NDA & IP protection", "Net-30 terms"],
+    desc: "Regular orders, bulk runs, and ongoing local manufacturing.",
+    features: [
+      "Volume pricing — up to 30% off",
+      "Priority turnaround",
+      "Dedicated point of contact",
+      "Material & design consulting",
+      "Flexible billing — pay monthly",
+    ],
   },
 ];
 
@@ -32,14 +51,15 @@ const Pricing = () => {
         <div className="max-w-2xl mb-16">
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">Pricing</p>
           <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight text-gradient">
-            Transparent pricing. No surprises.
+            Simple pricing for every business.
           </h2>
+          <p className="text-muted-foreground mt-4 text-lg">No minimums. No surprise fees. Just a fair price for quality local work.</p>
         </div>
         <div className="grid md:grid-cols-3 gap-5">
           {tiers.map((t) => (
             <div
               key={t.name}
-              className={`relative p-8 rounded-3xl border transition-all ${
+              className={`relative p-8 rounded-3xl border transition-all flex flex-col ${
                 t.featured
                   ? "border-primary/50 bg-gradient-card shadow-glow"
                   : "border-border bg-gradient-card hover:border-primary/30"
@@ -50,33 +70,41 @@ const Pricing = () => {
                   Most popular
                 </div>
               )}
-              <h3 className="font-display text-xl font-semibold mb-2">{t.name}</h3>
-              <p className="text-sm text-muted-foreground mb-6 min-h-[40px]">{t.desc}</p>
-              <div className="flex items-baseline gap-1 mb-8">
-                <span className="font-display text-5xl font-semibold">{t.price}</span>
-                <span className="text-muted-foreground">{t.unit}</span>
+              <div>
+                <h3 className="font-display text-xl font-semibold mb-2">{t.name}</h3>
+                <p className="text-sm text-muted-foreground mb-6 min-h-[48px]">{t.desc}</p>
+                <div className="flex items-baseline gap-1 mb-8">
+                  <span className="font-display text-5xl font-semibold">{t.price}</span>
+                  <span className="text-muted-foreground">{t.unit}</span>
+                </div>
+                <ul className="space-y-3 mb-8">
+                  {t.features.map((f) => (
+                    <li key={f} className="flex items-start gap-3 text-sm">
+                      <Check className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground">{f}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul className="space-y-3 mb-8">
-                {t.features.map((f) => (
-                  <li key={f} className="flex items-start gap-3 text-sm">
-                    <Check className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-muted-foreground">{f}</span>
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="#quote"
-                className={`block text-center w-full py-3 rounded-full font-medium transition-all ${
-                  t.featured
-                    ? "bg-gradient-primary text-primary-foreground hover:scale-[1.02]"
-                    : "bg-secondary text-secondary-foreground hover:bg-secondary/70"
-                }`}
-              >
-                Get started
-              </a>
+              <div className="mt-auto">
+                <a
+                  href="#contact"
+                  className={`group flex items-center justify-center gap-2 w-full py-3 rounded-full font-medium transition-all ${
+                    t.featured
+                      ? "bg-gradient-primary text-primary-foreground hover:scale-[1.02]"
+                      : "bg-secondary text-secondary-foreground hover:bg-secondary/70"
+                  }`}
+                >
+                  {t.price === "Custom" ? "Get in touch" : "Get started"}
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                </a>
+              </div>
             </div>
           ))}
         </div>
+        <p className="text-center text-sm text-muted-foreground mt-8">
+          Not sure which plan fits? <a href="#contact" className="text-primary hover:underline">Send us a message</a> and we'll figure it out together.
+        </p>
       </div>
     </section>
   );
