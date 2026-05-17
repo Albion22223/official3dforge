@@ -36,8 +36,8 @@ const Footer = () => {
           <div>
             <p className="text-sm font-medium mb-3">Get in touch</p>
             <div className="space-y-2">
-              <a href="mailto:hello@3dforge.io" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
-                <Mail className="h-4 w-4" /> hello@3dforge.io
+              <a href="mailto:official3dforge@gmail.com" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Mail className="h-4 w-4" /> official3dforge@gmail.com
               </a>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4" /> Westchester County, NY
