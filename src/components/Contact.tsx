@@ -55,7 +55,7 @@ const Contact = () => {
       const body = encodeURIComponent(
         `Name: ${form.name}\nBusiness: ${form.business}\nEmail: ${form.email}\n\n${form.message}`
       );
-      window.location.href = `mailto:hello@3dforge.io?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:official3dforge@gmail.com?subject=${subject}&body=${body}`;
       toast.success("Opening your email app…", { description: "Your message is ready to send." });
     } finally {
       setSending(false);
@@ -80,7 +80,7 @@ const Contact = () => {
           <div className="md:col-span-2 space-y-6">
             <div className="rounded-2xl border border-border bg-gradient-card p-6 space-y-5">
               <InfoRow icon={<MapPin className="h-4 w-4 text-primary" />} label="Location" value="Westchester County, NY" />
-              <InfoRow icon={<Mail className="h-4 w-4 text-primary" />} label="Email" value="hello@3dforge.io" />
+              <InfoRow icon={<Mail className="h-4 w-4 text-primary" />} label="Email" value="official3dforge@gmail.com" />
               <InfoRow icon={<Phone className="h-4 w-4 text-primary" />} label="Response time" value="Within 1 business day" />
             </div>
             <div className="rounded-2xl border border-border bg-gradient-card p-6">
